@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito Sans;
+}
+
+.container {
+    max-width: 1113px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.big-img {
+    background-repeat: no-repeat;
+    object-fit: cover 1440px;
+    background-image: url(../img/hero-img.png);
+    background-size: cover;
+}
+
+.header {
+    background-color: #D3CBC5;
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__container ul a {
+    color: #1B1A1A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px; /* 375% */
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all 0.5s;
+}
+
+.header__container ul li:last-child a {
+    margin-right: 0px;
+}
+
+.header__container ul a:hover {
+    text-decoration: underline white;
+    color: white;
+}
+
+.header__container .search-apk img {
+    cursor: pointer;
+    margin-right: 27px;
+}
+
+.header__container .search-apk img:last-child {
+    margin-right: 0px;
+}
+
+.hero__container h5 {
+    margin-top: 206px;
+    color: #2C314B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 375% */
+    margin-bottom: -17px;
+}
+
+.hero__container h2 {
+    width: 361px;
+    color: #1B1A1A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
+    margin-bottom: 15px;
+}
+
+.hero__container h4 {
+    color: #121211;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 250% */
+}
+
+.hero__container h4 span {
+    color: #878787;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 21px;
+}
+
+.hero__container a {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    background: #1C1B1B;
+    text-decoration: none;
+    padding: 7px 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 428.571% */
+    border: 2px solid #121211;
+    transition: all 0.5s;
+    margin-bottom: 287px;
+}
+
+.hero__container a:hover {
+    background: #D3CBC5;
+    color: #121211;
+}
+
+.header__container input {
+    display: none;
+    position: absolute;
+    margin-left: 670px;
+}
+
+.hero {
+    padding-bottom: 287px;
+}
+
+@media screen and (max-width:768px) {
+    .header-nav {
+        display: none;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .header__container ul li a {
+        margin: 0px;
+        line-height: normal;
+        color: #D3CBC5;
+    } 
+
+    .header__container ul li {
+        border: 1px solid #121211;
+        background: #121211;
+    }
+
+    .header__container ul {
+        position: absolute;
+        /* margin-top: 100px; */
+        margin-left: -50px;
+        margin-top: 30px;
+    }
+
+    .hero__container .hero-description {
+        text-align: center;
+    }
+
+    .hero__container .hero-description h2 {
+        margin-left: 150px;
+    }
+
+    .header__container input {
+        display: flex;
+    }
+
+    .header__container input:checked + .header-nav {
+        display: flex;
+    }
+
+    .header__container input:checked + .header-nav ul {
+        display: block;
+    }
+
+    .search-apk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header__container input {
+        margin-left: 250px;
+    }
+
+    .hero__container .hero-description h2 {
+        margin-left: 50px;
+        width: 200px;
+        color: #1B1A1A;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+        margin-bottom: 15px;
+
+    }
+
+    .search-apk {
+        display: none;
+    }
+
+    .header__container ul {
+        margin-left: -190px;
+    }
+}
